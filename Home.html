@@ -1,0 +1,105 @@
+<!-- C -->
+<!-- tailor as per pre-requisted layouts and then to yours -->
+<!-- identify need of functionality i.e. javascript; and css and so forth and tailor as per layout as viable -->
+<!-- remove complications created by AI -->
+<!-- for now no fancy functionality/features and so forth-->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Home.css">
+</head>
+<body>
+<header id="main-header">
+    <!-- Header section for logo -->
+</header>
+<div id="logo-container">
+    <!-- Logo and platform title -->
+    <img id="logo" src="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\sort out\DBR-FH_Sample_logo_1-removebg-preview.png" alt="Logo">
+    <h1 class="platform-title">E-Learning Platform</h1>
+</div>
+<nav id="main-nav">
+    <!-- Navigation menu -->
+    <ul class="nav-list">
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#courses">Courses</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main id="content">
+    <!-- Main content section -->
+    <section id="courses">
+        <!-- Popular course section -->
+        <h2 class="section-title">Popular Course</h2>
+        <div class="course-item">
+            <img class="course-image" src="popular-course.jpg" alt="Popular Course">
+            <div class="course-description">Popular Course: Advanced Machine Learning</div>
+        </div>
+    </section>
+
+    <section id="register">
+        <!-- Registration form -->
+        <h2 class="section-title">Register</h2>
+        <form id="registration-form" action="/submit-registration" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit" class="submit-button">Register</button>
+        </form>
+    </section>
+
+    <section id="search-courses">
+        <!-- Search courses form -->
+        <h2 class="section-title">Search Courses</h2>
+        <form id="search-form" action="/search-courses" method="get">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search" placeholder="Enter course name" required>
+            <button type="submit" class="submit-button">Search</button>
+        </form>
+    </section>
+
+    <section id="course-list">
+        <!-- List of available courses -->
+        <h2 class="section-title">Available Courses</h2>
+        <ul class="course-list">
+            <li class="course-item">Introduction to Programming</li>
+            <li class="course-item">Data Science Fundamentals</li>
+            <li class="course-item">Web Development Basics</li>
+            <li class="course-item">Advanced Machine Learning</li>
+            <li class="course-item">Cloud Computing Essentials</li>
+        </ul>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy-policy">
+        <h2 class="section-title">Privacy Policy</h2>
+        <p>Your privacy is important to us. This section describes how we handle your personal information.</p>
+    </section>
+
+    <!-- Terms of Service Section -->
+    <section id="terms-of-service">
+        <h2 class="section-title">Terms of Service</h2>
+        <p>By using this platform, you agree to our terms and conditions outlined here.</p>
+    </section>
+</main>
+
+<footer id="main-footer">
+    <!-- Footer section -->
+    <div class="footer-content">
+        <p>&copy; 2023 E-Learning Platform. All rights reserved.</p>
+        <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a></p>
+    </div>
+</footer>
+</body>
+</html>

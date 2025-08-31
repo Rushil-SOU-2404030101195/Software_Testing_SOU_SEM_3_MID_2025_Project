@@ -1,0 +1,78 @@
+/* being careful as to were it is applied and so on */
+/* Homepage tags:
+
+Classes:
+platform-title
+nav-list
+nav-item
+section-title
+course-item
+course-image
+submit-button
+footer-content
+
+IDs:
+main-header
+logo-container
+main-nav
+content
+courses
+register
+registration-form
+search-courses
+search-form
+course-list
+privacy-policy
+terms-of-service
+
+main-footer*/
+
+#logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Move to the top-left corner */
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+#main-header {
+    position: relative;
+    width: 100%;
+    height: 60px; /* Adjust height as needed */
+    background-color: #f4f4f4; /* Example background color */
+    border-bottom: 2px solid #ccc; /* Optional border for definition */
+} // need to filled
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 10px;
+    padding: 0 10px;
+    border-right: 2px solid #000; /* Bold separating line */
+}
+
+.nav-item:last-child {
+    border-right: none; /* Remove line for the last item */
+}
+
+.nav-list.left {
+    justify-content: flex-start;
+}
+
+.nav-list.right {
+    justify-content: flex-end;
+}
