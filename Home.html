@@ -1,37 +1,44 @@
-<!-- C -->
 <!-- tailor as per pre-requisted layouts and then to yours -->
 <!-- identify need of functionality i.e. javascript; and css and so forth and tailor as per layout as viable -->
 <!-- remove complications created by AI -->
 <!-- for now no fancy functionality/features and so forth-->
- 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Learning Platform</title>
+    <title>DBR-FH Knowledge Hub - Home</title>
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Home.css">
+    <link rel="stylesheet" href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\General.css">
 </head>
-<body>
-<header id="main-header">
+<body class="body">
+<header id="main-header" class="header">
     <!-- Header section for logo -->
+        <a href="Home.html"><img id="logo" src="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\sort out\DBR-FH_Sample_logo_1-removebg-preview.png" alt="Logo">
+</a> 
 </header>
-<div id="logo-container">
-    <!-- Logo and platform title -->
-    <img id="logo" src="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\sort out\DBR-FH_Sample_logo_1-removebg-preview.png" alt="Logo">
-    <h1 class="platform-title">E-Learning Platform</h1>
-</div>
-<nav id="main-nav">
-    <!-- Navigation menu -->
-    <ul class="nav-list">
-        <li class="nav-item"><a href="#about">About</a></li>
-        <li class="nav-item"><a href="#courses">Courses</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
 
-<main id="content">
+    <!-- Navigation menu -->
+        <nav id="nav" class="nav">
+    <ul class="nav-list">
+        <!-- Left-aligned navigation items -->
+        <div class="nav-left">
+            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Home.html">Home</a></li>
+            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\About us.html">About Us</a></li>
+            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Contact us.html">Contact Us</a></li>
+        </div>
+        <!-- Right-aligned navigation items -->
+        <div class="nav-right">
+            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Register.html">Register</a></li>
+            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Login.html">Login</a></li>
+        </div>
+    </ul>
+
+        </nav>
+
+<main id="content" class="main">
     <!-- Main content section -->
     <section id="courses">
         <!-- Popular course section -->
@@ -57,17 +64,17 @@
             <br>
             <button type="submit" class="submit-button">Register</button>
         </form>
-    </section>
-
-    <section id="search-courses">
-        <!-- Search courses form -->
+    </section> 
+    
+    <!-- <section id="search-courses">
+        <!-- Search courses form 
         <h2 class="section-title">Search Courses</h2>
         <form id="search-form" action="/search-courses" method="get">
             <label for="search">Search:</label>
             <input type="text" id="search" name="search" placeholder="Enter course name" required>
             <button type="submit" class="submit-button">Search</button>
         </form>
-    </section>
+    </section>  -->
 
     <section id="course-list">
         <!-- List of available courses -->
@@ -81,20 +88,10 @@
         </ul>
     </section>
 
-    <!-- Privacy Policy Section -->
-    <section id="privacy-policy">
-        <h2 class="section-title">Privacy Policy</h2>
-        <p>Your privacy is important to us. This section describes how we handle your personal information.</p>
-    </section>
 
-    <!-- Terms of Service Section -->
-    <section id="terms-of-service">
-        <h2 class="section-title">Terms of Service</h2>
-        <p>By using this platform, you agree to our terms and conditions outlined here.</p>
-    </section>
 </main>
 
-<footer id="main-footer">
+<footer id="main-footer" class="footer">
     <!-- Footer section -->
     <div class="footer-content">
         <p>&copy; 2023 E-Learning Platform. All rights reserved.</p>
