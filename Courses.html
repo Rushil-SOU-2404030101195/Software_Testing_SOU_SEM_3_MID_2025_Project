@@ -24,21 +24,29 @@
         </div>
         <!-- Right-aligned navigation items -->
         <div class="nav-right">
-            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Register.html">Register</a></li>
-            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Login.html">Login</a></li>
-        </div>
+            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Courses.html">Courses</a></li>
+            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Login.html">logout</a></li>
+</div>
     </ul>
 
         </nav>
     <main id="main" class="main">
-<section id="main-courses" class="main-courses">
-    <h1>Courses</h1>
-    <p>Welcome to the Courses page. Here you can find a variety of courses offered by DBR-FH Knowledge Hub.</p>
-    <ul id="course-list" class="course-list">
-        <li><a href="#">Enroll</a></li>
-        <li><a href="#">Course 2: Advanced Topics in DBR-FH</a></li>
-    </ul>
-</section>
+    <section id="main-courses" class="section">
+      <h1>Courses</h1>
+      <p>Welcome to the Courses page. Enroll and track your progress!</p>
+      <ul id="course-list" class="course-list">
+        <li>
+          <h3>Course 1: Basics of DBR-FH</h3>
+          <button onclick="enrollCourse('course1')">Enroll</button>
+          <p>Status: <span id="course1-status">Not Enrolled</span></p>
+        </li>
+        <li>
+          <h3>Course 2: Advanced Topics</h3>
+          <button onclick="enrollCourse('course2')">Enroll</button>
+          <p>Status: <span id="course2-status">Not Enrolled</span></p>
+        </li>
+      </ul>
+    </section>
 <!-- courses with complition measure, quiz/exam maybe. email,phone notifications...etc -->
  <!-- make tiles for courses description and images for display and animations of buttons and so on-->
     </main>
@@ -50,5 +58,7 @@
     </div>
 
     </footer>
+
+      <script src="script.js"></script>
 </body>
 </html>
