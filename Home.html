@@ -10,47 +10,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DBR-FH Knowledge Hub - Home</title>
     <!-- Link to external CSS -->
-    <link rel="stylesheet" href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Home.css">
-    <link rel="stylesheet" href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\General.css">
-</head>
+      <link rel="javascript" href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Script.js">
+       <link rel="stylesheet" href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\General.css">
+        <link rel="stylesheet" href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Home.css">
+    </head>
 <body class="body">
 <header id="main-header" class="header">
     <!-- Header section for logo -->
         <a href="Home.html"><img id="logo" src="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\sort out\DBR-FH_Sample_logo_1-removebg-preview.png" alt="Logo">
-</a> 
+</a>                   <a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Home.html"><h1 id="header-heading">.Learn.Innovate.Educate</h1></a>
+   
 </header>
 
     <!-- Navigation menu -->
-        <nav id="nav" class="nav">
+      <nav id="nav" class="nav">
     <ul class="nav-list">
         <!-- Left-aligned navigation items -->
         <div class="nav-left">
-            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Home.html">Home</a></li>
-            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\About us.html">About Us</a></li>
-            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Contact us.html">Contact Us</a></li>
+            <li class="nav-item"><button class="nav-button"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Home.html">Home</a></button></li>
+            <li class="nav-item"><button class="nav-button"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\About us.html">About Us</a></button></li>
+            <li class="nav-item"><button class="nav-button"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Contact us.html">Contact Us</a></button></li>
         </div>
         <!-- Right-aligned navigation items -->
         <div class="nav-right">
-            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Register.html">Register</a></li>
-            <li class="nav-item"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Login.html">Login</a></li>
-        </div>
+            <li class="nav-item"><button class="nav-button"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Register.html">Register</a></button></li>
+            <li class="nav-item"><button class="nav-button"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Login.html">Login</a></button></li>
     </ul>
 
         </nav>
 
-<main id="content" class="main">
+<main id="main" class="main">
     <!-- Main content section -->
-    <section id="courses">
+    <section id="section-popular-course">
         <!-- Popular course section -->
-        <h2 class="section-title">Popular Course</h2>
-        <div class="course-item">
-            <img class="course-image" src="popular-course.jpg" alt="Popular Course">
-            <div class="course-description">Popular Course: Advanced Machine Learning</div>
-        </div>
+        <ul id="section-popular-course-list-ul">
+        <h2 class="section-popular-course-title">Popular Course</h2>
+            <div id="section-popular-course-div"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Register.html">
+            <li class="section-popular-course-div-image"><img src="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\datasciencefundamentals.jpg" alt="datasciencefundamentals"></li>
+            <li class="section-popular-course-div-title">Data Science Fundamentals</li>
+            <li class="section-popular-course-div-description">Explore data analysis, statistics, visualization, and machine learning basics to extract insights and make data-driven decisions effectively.</li></a> 
+            </div>
+    </ul>
     </section>
 
-    <section id="register">
-        <!-- Registration form -->
+    <!-- <section id="register">
+        - Registration form --
         <h2 class="section-title">Register</h2>
         <form id="registration-form" action="/submit-registration" method="post">
             <label for="name">Name:</label>
@@ -65,9 +69,9 @@
             <button type="submit" class="submit-button">Register</button>
         </form>
     </section> 
-    
+     -->
     <!-- <section id="search-courses">
-        <!-- Search courses form 
+         Search courses form 
         <h2 class="section-title">Search Courses</h2>
         <form id="search-form" action="/search-courses" method="get">
             <label for="search">Search:</label>
@@ -76,15 +80,33 @@
         </form>
     </section>  -->
 
-    <section id="course-list">
+    <section id="section-course-list">
         <!-- List of available courses -->
-        <h2 class="section-title">Available Courses</h2>
-        <ul class="course-list">
-            <li class="course-item">Introduction to Programming</li>
-            <li class="course-item">Data Science Fundamentals</li>
-            <li class="course-item">Web Development Basics</li>
-            <li class="course-item">Advanced Machine Learning</li>
-            <li class="course-item">Cloud Computing Essentials</li>
+        <h2 id="section-course-list-title">Available Courses</h2>
+        <ul id="section-course-list-ul">
+            <div id="section-course-list-ul-div"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Register.html">
+            <li class="course-list-item-image"><img src="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\Introductiontoprogramming.jpg" alt="Introductiontoprogramming"></li>
+            <li class="course-list-item">Introduction to Programming</li>
+            <li class="course-list-item-description">Learn foundational programming concepts including variables, loops, functions, and debugging using Python or C to solve computational problems.</li></a> 
+            </div>
+             
+            <div id="section-course-list-ul-div"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Register.html">
+            <li class="course-list-item-image"><img src="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\datasciencefundamentals.jpg" alt="datasciencefundamentals"></li>
+            <li class="course-list-item">Data Science Fundamentals</li>
+            <li class="course-list-item-description">Explore data analysis, statistics, visualization, and machine learning basics to extract insights and make data-driven decisions effectively.</li></a> 
+            </div>
+            
+            <div id="section-course-list-ul-div"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Register.html">
+            <li class="course-list-item-image"><img src="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\Web-dev-basics.jpg" alt="Web-dev-basics"></li>
+            <li class="course-list-item">Web Development Basics</li>
+            <li class="course-list-item-description">Gain skills in HTML, CSS, and JavaScript to build interactive, responsive websites and understand front-end web technologies.</li></a>            
+            </div>
+            
+            <div id="section-course-list-ul-div"><a href="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\DBR-FH ps\DBR-FH Manual\Register.html">
+            <li class="course-list-item-image"><img src="C:\Users\91971\OneDrive\Documents\SOU\SEM-3\Project\DBR-FH Knowledge Hub\advML.jpg" alt="advML"></li>
+            <li class="course-list-item">Advanced Machine Learning</li>
+            <li class="course-list-item-description">Master deep learning, neural networks, and advanced algorithms for AI applications, including image recognition, natural language processing, and predictive modeling.</li></a>            
+            </div>
         </ul>
     </section>
 

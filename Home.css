@@ -32,14 +32,194 @@ main-footer
 common eleements in css 
 */
 
-#courses {
-    padding: 20px;
-    background-color: #f4f4f4;
+/* main will ensure gaps between block elements like div or section */
+#main {
+    display: block;
+    gap: 20px; /* Space between block elements */
+    padding: 20px; /* Padding around the main content */
+    background-color: #f9f9f9; /* Light background color for contrast */
     position: relative;
+    min-height: calc(100vh - 120px); /* full screen minus header + footer */
+
+}
+/* card can take full space for to and display */
+
+#section-popular-course {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
+    background-color: #fff transparent; /* White background for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+
 }
 
-#register {
-    padding: 10px 10px 10px 10px;
-    position: relative;
-    background-color: #f4f4f4;
+#section-popular-course-list-ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the course cards */
+
 }
+
+.section-popular-course-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for readability */
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+#section-popular-course-div {
+    background-color: #ffffff; /* White background for course cards */
+    border: 1px solid #000000; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 3000px; /* Fixed width for cards */
+    margin: 10px; /* Margin around each card */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between; /* Ensure content is spaced out */
+    align-items: center; /* Center content horizontally */
+    
+
+}
+
+#section-popular-course-div a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+}
+.section-popular-course-div-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee; /* Separator line */
+}
+
+.section-popular-course-div-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    text-align: center;
+}
+
+.section-popular-course-div-description {
+    font-size: 14px;
+    color: #666; /* Lighter text for description */
+    padding: 0 10px 10px 10px;
+    text-align: center;
+    flex-grow: 1; /* Ensure description takes available space */
+}
+
+/* hover card effect */
+#section-popular-course-div:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: yellowgreen 3px solid; /* Change border color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+    .section-popular-course-div-description {
+        color: #ffffff; /* Change description text color on hover */
+    }
+    .section-popular-course-div-image img {
+        filter: brightness(0.9); /* Slightly dim the image on hover */
+        border-bottom: yellowgreen 3px solid; /* Change border color on hover */
+        border-style: inherit;
+        transition: all 0.3s ease; /* Smooth transition */
+}
+
+}
+
+/* make cards like */
+
+/* card configuration: Image layer 
+Title layer
+Description layer */
+
+#section-course-list {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
+    background-color: #fff transparent; /* White background for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+}
+#section-course-list-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for readability */
+    text-align: center;
+    font-weight: bold;
+}
+
+#section-course-list-ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the course cards */
+}
+#section-course-list-ul-div {
+    background-color: #ffffff; /* White background for course cards */
+    border: 1px solid #000000; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 300px; /* Fixed width for cards */
+    margin: 10px; /* Margin around each card */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    display: flex;
+    flex-direction: column;
+}
+
+#section-course-list-ul-div a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+}
+
+.course-list-item-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee; /* Separator line */
+}
+
+.course-list-item {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    text-align: center;
+}
+.course-list-item-description {
+    font-size: 14px;
+    color: #666; /* Lighter text for description */
+    padding: 0 10px 10px 10px;
+    text-align: center;
+    flex-grow: 1; /* Ensure description takes available space */
+}
+    
+/* hover card effect */
+
+#section-course-list-ul-div:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: yellowgreen 3px solid; /* Change border color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+    .course-list-item-description {
+        color: #ffffff; /* Change description text color on hover */
+    }
+    .course-list-item-image img {
+        filter: brightness(0.9); /* Slightly dim the image on hover */
+        border-bottom: yellowgreen 3px solid; /* Change border color on hover */
+        border-style: inherit;
+        transition: all 0.3s ease; /* Smooth transition */
+}
+

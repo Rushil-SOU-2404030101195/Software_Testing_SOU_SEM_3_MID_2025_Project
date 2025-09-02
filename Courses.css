@@ -1,31 +1,37 @@
-.header {
+/* develop cards and rest of link thing */
+/* something has affected the courses html with application of general css */
 
+ #main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the course cards */
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: relative;
+    min-height: calc(100vh - 120px); /* full screen minus header + footer */
 }
 
-#header{
-
-}
-
-.nav{
-
-}
-
-#nav{
-
-}
-
-.main{
-
-}
-
-#main{
-
-}
-
-.footer{
-
-}
-
-#footer{
-
+#main-courses{
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
+    background-color: #fff; /* White background for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #cffe00; /* Border to match footer accent */
+} 
+/* Course card styles */
+#course-list {
+    background-color: #ff0000; /* White background for course cards */
+    border: 1px solid #ff0000; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 300px; /* Fixed width for cards */
+    margin: 10px; /* Margin around each card */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    display: flex;
+    flex-direction: column;
 }

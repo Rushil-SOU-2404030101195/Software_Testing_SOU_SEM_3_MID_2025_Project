@@ -10,6 +10,7 @@ if (registerForm) {
     localStorage.setItem("password", pass);
 
     document.getElementById("message").innerText = "✅ Registered successfully!";
+    alert("Registration Successful!");
   });
 }
 
@@ -30,6 +31,7 @@ if (loginForm) {
       setTimeout(() => window.location.href = "Courses.html", 1000);
     } else {
       document.getElementById("message").innerText = "❌ Invalid Credentials!";
+      alert("Login Failed! Please check your username and password.");
     }
   });
 }
@@ -38,6 +40,7 @@ if (loginForm) {
 function enrollCourse(courseId) {
   localStorage.setItem(courseId, "Enrolled");
   document.getElementById(courseId + "-status").innerText = "Enrolled ✅";
+  alert("Course " + courseId + " enrolled successfully!");
 }
 
 if (document.getElementById("course-list")) {
@@ -51,10 +54,8 @@ if (document.getElementById("course-list")) {
   };
 }
 
-// ===== Mark Completed =====
-function markCompleted(courseId) {
-  localStorage.setItem(courseId, "Completed");
-  document.getElementById(courseId + "-dash").innerText = "Completed ✅";
-}
-alert("Script loaded successfully!");
-// You can remove this alert after confirming the script loads correctly.
+// // ===== Mark Completed =====
+// function markCompleted(courseId) {
+//   localStorage.setItem(courseId, "Completed");
+//   document.getElementById(courseId + "-dash").innerText = "Completed ✅";
+// }
