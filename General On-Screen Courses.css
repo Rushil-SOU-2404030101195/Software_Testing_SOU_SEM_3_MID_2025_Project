@@ -1,0 +1,128 @@
+
+#main {
+    margin-top: 70px; /* Adjust based on header height */
+    min-height: calc(100vh - 140px); /* Full viewport height minus header and footer heights */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in total width/height */
+    position: relative;
+    z-index: 1; /* Ensure main content is above background elements */
+
+    display: block;
+    gap: 20px; /* Space between block elements */
+    padding: 20px; /* Padding around the main content */
+    background-color: transparent; /* Light background color for contrast */
+    gap: 20px; /* Space between list items */
+    justify-content: center; /* Center the list items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+/* make video go right with it fullness */
+
+.section-video {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px; /* Center the section */
+    padding: 20px;
+    background-color: #fff transparent; /* White background for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    position: relative;
+    min-height: calc(100vh - 140px); /* Full viewport height minus header and footer heights */
+    padding-right: 300px; /* Space for the aside on the right */
+
+}
+
+.section-video-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    gap: 15px; /* Space between elements */
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px; /* Limit the maximum width of the content */
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+    background-color: #fff transparent; /* White background for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text */
+
+}
+
+.section-video-div-iframe {
+    width: 100%;
+    max-width: 800px; /* Limit the maximum width of the iframe */
+    height: 450px; /* Fixed height for the iframe */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.section-video-div-heading-title {
+    font-size: 24px;
+    color: #ffffff; /* Dark text for readability */
+    text-align: left;
+    font-weight: bold;
+}
+
+.section-video-div-p-description {
+    font-size: 16px;
+    color: #666; /* Medium text for readability */
+    text-align: center;
+    max-width: 800px; /* Limit the maximum width of the description */
+}
+
+/* make aside to right */
+
+.section-video-aside {
+    position: absolute;
+    top: 100px; /* Adjust based on header height */
+    right: 20px; /* Space from the right edge */
+    width: 250px; /* Fixed width for the aside */
+    background-color: #fff transparent; /* White background for the aside */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    max-height: calc(100vh - 140px); /* Full viewport height minus header and footer heights */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+}
+
+.section-video-aside-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between elements */
+}
+
+.section-video-aside-div-title {
+    font-size: 20px;
+    color: #333; /* Dark text for readability */
+    text-align: center;
+    font-weight: bold;
+}
+
+.section-video-aside-div-ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between list items */
+}
+
+.section-video-aside-div-ul-item-chapter {
+    font-size: 16px;
+    color: #007BFF; /* Link color */
+}
+
+.section-video-aside-div-ul-item-chapter a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+}
+
+.section-video-aside-div-ul-item-chapter a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* develop cards and rest of link thing */
+/* something has affected the courses html with application of general css */
+

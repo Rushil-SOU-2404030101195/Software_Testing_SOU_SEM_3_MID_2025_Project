@@ -1,31 +1,145 @@
-.header {
-
-}
-
-#header{
-
-}
-
-.nav{
-
-}
-
-#nav{
-
-}
-
-.main{
-
-}
+/* make card of form or proper it give it box to stay in and goodness */
 
 #main{
-
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    min-height: calc(100vh - 120px); /* Full viewport height minus header and footer */
+    background-color: #f0f0f0 transparent; /* Light background color for contrast */
+    padding: 20px;
 }
 
-.footer{
-
+#section-register {
+    background-color: #ffffff transparent; /* White background for the form container */
+    padding: 30px;
+    border: #e1ff00 solid 2px; /* Blue border for emphasis */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 350px; /* Limit the maximum width of the form */
 }
 
-#footer{
-
+#section-register-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
 }
+
+#section-register-div-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fbff00; /* Dark text for readability */
+    text-align: center;
+    font-weight: bold;
+}
+
+#section-register-div-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    width: 100%;
+    margin-top: 10px;
+}
+
+#section-register-div-form-input-username, #section-register-div-form-input-email, #section-register-div-form-input-password, #section-register-div-form-input-confirm-password, #section-register-div-form-button-submit-register {  
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't affect total width */
+}
+
+#section-register-div-form-button-submit-register {
+    background-color: transparent; /* Primary button color */
+    color: rgb(0, 251, 255);
+    border: #00ffff 2px solid;
+    font-size: 14px;
+    font-style: normal;
+    width: 100px;
+    margin: 20px 0px 10px 121px ; /* Center the button */
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#section-register-div-form-button-submit-register:hover {
+    background-color: rgb(97, 200, 255); /* Darker shade on hover */
+    color: rgba(255, 255, 255, 0.762);
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: border-radius 0.3s ease;
+}
+
+#section-register-div-form-button-submit-register:active {
+    background-color: rgb(0, 157, 255); /* Even darker shade on click */
+    color: rgba(255, 255, 255, 0.756);
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.1s ease;
+}
+
+#section-register-div-form-input-username, #section-register-div-form-input-email, #section-register-div-form-input-password, #section-register-div-form-input-confirm-password {
+    border: 1px solid #e5ff00; /* Light border */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effects */
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #070707;
+    font-weight: normal;
+    background-color: transparent; /* Light background for input fields */
+}
+
+#section-register-div-form-input-username:focus, #section-register-div-form-input-email:focus, #section-register-div-form-input-password:focus, #section-register-div-form-input-confirm-password:focus {
+    border-color: #00ffff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+   /* Subtle glow effect */
+   background-color: #ffffff;
+   transition: background-color 0.3s ease,  border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effects */
+}
+
+/* see how to manipulate placeholder */
+#section-register-div-form-input-username::placeholder, #section-register-div-form-input-email::placeholder, #section-register-div-form-input-password::placeholder, #section-register-div-form-input-confirm-password::placeholder {
+    color: #e5ff00; /* Placeholder text color */
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+#section-register-div-form-input-username:focus::placeholder, #section-register-div-form-input-email:focus::placeholder, #section-register-div-form-input-password:focus::placeholder, #section-register-div-form-input-confirm-password:focus::placeholder {
+    color: #a1a1a1; /* Lighter placeholder text color on focus */
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    transition: color 0.3s ease; /* Smooth transition for focus effects */
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: red; /* Error message color */
+    text-align: center;
+}
+#section-register-div-form-link {
+    font-size: 14px;
+    text-align: center;
+}
+#section-register-div-form-link a {
+    color: #007BFF; /* Link color */
+    text-decoration: none;
+}
+#section-register-div-form-link a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+#section-register-div-title {
+    font-size: 28px;
+}
+
+/* in javascript alert for not filling inputs and something went wrong */
+
